@@ -4,9 +4,9 @@ import { MultisetClient, DEFAULT_ENDPOINTS } from "@multisetai/vps/core";
 import { WebxrController } from "@multisetai/vps/webxr";
 
 const CLIENT_CONFIG = {
-  clientId: "YOUR_CLIENT_ID",
-  clientSecret: "YOUR_CLIENT_SECRET",
-  code: "YOUR_MAP_CODE", // map or map-set code
+  clientId: import.meta.env.VITE_CLIENT_ID,
+  clientSecret: import.meta.env.VITE_CLIENT_SECRET,
+  code: import.meta.env.VITE_MAP_CODE, // map or map-set code
   mapType: "map" as const, // map or map-set
 };
 
